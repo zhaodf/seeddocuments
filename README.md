@@ -76,7 +76,7 @@ sphinx与seed文档环境配置详细说明(Windows)
 
     [http://www.github.com](http://www.github.com)
 
-  * 在本地硬盘上新建一个目录，使用git clone以下地址：
+  * 在本地硬盘上新建一个目录，右键点击空白处，选择Git Clone，然后在URL栏里输入以下地址：
 
     https://github.com/tdzl2003/seeddocuments.git
 
