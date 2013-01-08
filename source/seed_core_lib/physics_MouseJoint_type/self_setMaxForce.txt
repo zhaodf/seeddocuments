@@ -1,0 +1,105 @@
+
+
+self:setMaxForce() 
+===================================
+         
+==========     ========  
+类型          函数 
+所属包         display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码        */SeedSDK/SampleCode/*
+相关API       audio.pause() audio.loadSound() audio.loadStream()
+==========     ========  
+
+
+概述
+-----
+
+设置最大关节作用力
+
+
+用法 
+-----
+
+::
+
+   self:setMaxForce(force) 
+
+| ``force``. 关节作用力 .
+
+注意 
+-----
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+   .. highlight:: bash
+    
+   .. code-block:: bash
+
+   local ra = require("runtime"):newAgent();               --创建runtime（相当于计时器）
+
+   local pysicsUtil = require("physics_util")
+
+   local stageCls=display:newBgColorStage();                       --清除画面
+   stageCls.red = 1; stageCls.green = 1; stageCls.blue = 1;    --指定以什么颜色清除画面
+
+   stage = display:newStage2D();                       --创建一个2D渲染阶段，这里用于渲染精灵动画
+   scrW, scrH = display.getContentSize()
+
+   math.randomseed(os.time())                      --产生随机数种子
+
+   local world = physics.newWorld(0,500)           --创建一个物理世界，这里的重力加速度是300pixel/sec^2
+   world:start(ra)                         --物理世界开始逻辑
+   display:addStage(world)                         --加入渲染阶段，显示物理实体
+
+   local bodyGround = world:createBody()
+
+   local frame = world:createBody("static")
+   frame:createFixture("chainloop", {0, 0, 800, 0, 800, 480, 0, 480}, {friction = 1, restitution = 0.8, density = 1})  --设置边框
+
+
+   local circle = world:createBody("dynamic", {x = scrW/2, y = scrH/2})
+   circle:createFixture("circle", 20)    --创建圆形BODY体circle
+
+   local mouseJoint
+
+   input.touch:addListener(function(ev)
+       if ev.type == "down" then
+           mouseJoint = world:createMouseJoint(ev.x, ev.y, bodyGround)     --创建鼠标关节
+           if mouseJoint then
+               mouseJoint:setDampingRatio(12)      --设置震动阻尼
+               mouseJoint:setFrequency(2)          --设置振动频率
+               mouseJoint:setMaxForce(1000)                       --设置最大关节作用力
+               print(mouseJoint:getDampingRatio());            --获取阻尼
+               print(mouseJoint:getFrequency());               --获取振动频率
+               print(mouseJoint:getMaxForce());                --获取最大关节作用力
+              
+           end
+       elseif ev.type == "up" then
+           if mouseJoint then
+               mouseJoint:remove()                 --删除鼠标关节
+           end
+       else
+           if mouseJoint then
+               mouseJoint:setTarget(ev.x, ev.y)    --设置物体要到达的目标位置
+               print(mouseJoint:getTarget());                  --获取目标位置
+           end
+       end
+   end)
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

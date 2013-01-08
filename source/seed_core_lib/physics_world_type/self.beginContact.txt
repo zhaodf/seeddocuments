@@ -1,0 +1,62 @@
+
+
+self:beginContact
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+当两个Body开始接触时，执行beginContact事件。 
+
+
+用法 
+-----
+
+::
+
+    self:beginContact 
+
+function(ev) end 
+
+==========      ================		========   
+名称            类型 					说明 
+==========      ================		======== 
+ev				physics.Contact			包含互相接触的Fixture对象，详见physics.Contact
+==========      ================		======== 
+
+
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

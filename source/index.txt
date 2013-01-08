@@ -7,9 +7,8 @@
 欢迎来到Seed游戏引擎API文档中心
 ****************************
 
-.. note::
 
-   *在这里您可以了解关于Seed游戏引擎更多的功能，每个API都配有详细的代码范例和使用注意。*
+*在这里您可以了解关于Seed游戏引擎更多的功能，每个API都配有详细的代码范例和使用注意。*
 
    
 Lua标准库
@@ -31,16 +30,19 @@ Lua标准库
 引擎核心库
 ===================================
 
-.. note::
-
-   *以下都是跟Seed游戏引擎核心相关的API, 当前主要包含事件，显示，输入，物理，声音，数据，商城，系统，网络等。*
+*以下都是跟Seed游戏引擎核心相关的API, 当前主要包含事件，显示，输入，物理，声音，数据，商城，系统，网络等。*
 
 事件
 ---------------------
 .. toctree::
    :maxdepth: 2
 
-   seed_core_lib/event_lib/index               
+   seed_core_lib/event_lib/index
+
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/event_dispatcher_type/index                          
    seed_core_lib/runtime_lib/index
    seed_core_lib/transition_lib/index
 
@@ -133,9 +135,7 @@ Lua标准库
 引擎插件
 ===================================
 
-.. note::
-
-   *以下都是Seed游戏引擎的插件，熟练的使用插件能够帮助您更快的开发游戏节省重复性工作。*
+*以下都是Seed游戏引擎的插件，熟练的使用插件能够帮助您更快的开发游戏节省重复性工作。*
 
 .. toctree::
    :maxdepth: 2

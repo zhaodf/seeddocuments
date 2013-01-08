@@ -1,0 +1,60 @@
+
+
+self:removeListener()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+删除一个Dispatcher中注册的监听器。删除之后，分发事件不再会分发给此监听器。
+
+
+用法 
+-----
+
+::
+
+	self:removeListener(listener)
+
+==================  	===========
+名称	 					说明
+==================  	===========
+listener	 			注册的监听器。应当是一个可被调用的对象（函数或者metatable具备__call函数）
+==================  	===========
+
+
+
+注意 
+-----
+
+| 如果监听器没有被注册过，会产生一个警告。
+| 如果监听器是一个由别的函数返回的函数对象，请确保它和注册的监听器是同一个对象，两次调用一个返回函数的函数通常会返回不同的对象。更具体的说明，参考说明:闭包中的示例。
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

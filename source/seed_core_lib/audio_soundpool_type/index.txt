@@ -8,6 +8,15 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   self_type
+   self_native
+   self_prepare
+   self_play
+   self_find
+   self_isValidId
+   self_releaseSounds
+
+
    
 
 

@@ -9,6 +9,18 @@ Contents:
    :maxdepth: 2
 
    
+   self_bodyA
+   self_bodyB
+   self_next
+   self_jointType
+   self_getAnchorA
+   self_getAnchorB
+   self_setLength
+   self_getLength
+   self_setFrequency
+   self_getFrequency
+   self_setDampingRatio
+   self_getDampingRatio
 
 
 

@@ -1,0 +1,63 @@
+
+
+self:start()
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+开始播放音乐 
+
+ 
+
+
+用法 
+-----
+
+::
+
+    self:start(isLoop)
+
+| ``isLoop``. 是否循环播放（true为循环播放，false为只播放一次）。
+
+注意 
+-----
+
+在音乐暂停时，使用本方法可以使音乐从头开始播放 
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+    local player = audio.newPlayer("res://musics/1.ogg")    --创建播放器，并加载音乐
+    player:start(true)                                      --开始循环播放
+
+    local player_2 = audio.newPlayer()                      --创建播放器
+    player:prepare("res://musics/2.ogg")                    --加载音乐
+    player:seek(20.0)                                       --跳转到第20秒
+    player:start(false)                                     --直接从第20秒的位置播放，只播放一次
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

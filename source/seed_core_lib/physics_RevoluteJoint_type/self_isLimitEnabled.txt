@@ -1,0 +1,54 @@
+
+
+self:isLimitEnabled()
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+获取约束开关状态 
+
+
+用法 
+-----
+
+::
+
+    self:isLimitEnabled()
+
+约束开关状态，布尔型值    
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

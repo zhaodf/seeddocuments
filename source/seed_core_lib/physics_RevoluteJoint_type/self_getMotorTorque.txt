@@ -1,0 +1,137 @@
+
+
+self:getMotorTorque() 
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+获取马达当前扭矩。 
+
+
+用法 
+-----
+
+::
+
+    self:getMotorTorque() 
+
+该旋转关节的马达当前扭矩值 
+    
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+	local ra = require("runtime"):newAgent();
+
+	local stageCls=display:newBgColorStage();                       --清除画面
+	stageCls.red = 1; stageCls.green = 1; stageCls.blue = 1;    --指定以什么颜色清除画面
+
+	local world = physics.newWorld(0,0)
+	world:start(ra)
+	display:addStage(world)
+
+	local scrw, scrh = display.getContentSize()
+
+	local bodyGround = world:createBody();
+	bodyGround.y = 768
+
+	local bodyFrame = world:createBody("static", {})
+	bodyFrame:createFixture("chainloop", {0, 0, scrw, 0, scrw, scrh - 0.5, 0, scrh - 0.5}, {restitution = 0.1,friction = 0.6,density = 100})
+	bodyFrame:setPosition(0, 0)
+	   
+	   
+	local s_x, s_y = scrw/2, scrh/2 + 80
+	local base = world:createBody("dynamic", {x = s_x, y = s_y})
+	base:createFixture("box", 300, 100, {restitution = 0.1,friction = 0.5,density = 2})
+
+	local lw_x, lw_y = s_x - 100, s_y + 120
+	local rw_x, rw_y = s_x + 120, s_y + 150
+
+	local wheel = world:createBody("dynamic", {x = rw_x, y = rw_y})
+	wheel:createFixture("circle", 50, {restitution = 0.1,friction = 0.5,density = 2})    --创建圆形BODY体wheel
+
+	local wheel_2 = world:createBody("dynamic", {x = lw_x, y = lw_y})
+	wheel_2:createFixture("circle", 50, {restitution = 0.1,friction = 0.5,density = 2})    --创建圆形BODY体wheel_2
+
+
+	local motor = world:createRevoluteJoint(wheel, base, {rw_x, rw_y})      --创建旋转关节motor
+
+
+
+	--旋转关节方法
+	motor:setLimitEnabled(flag);            --设置约束开关状态
+	print(motor:isLimitEnabled());          --获取约束开关状态
+	motor:setLimit(lower, upper);           --设置约束范围
+	print(motor:getLimit());                --获取约束范围
+	motor:setMotorEnabled(flag);                --设置关节马达开关状态
+	print(motor:isMotorEnabled());          --获取关节马达开关状态
+	motor:setMotorSpeed(100);               --设置马达运动速度
+	print(motor:getMotorSpeed());           --获取马达运动速度
+	motor:setMaxMotorTorque(100);           --设置马达最大扭矩（N·m）
+	print(motor:getMaxMotorTorque());       --获取马达最大扭矩
+	print(motor:getMotorTorque());          --获取马达当前扭矩
+
+
+	world:createDistanceJoint(wheel, wheel_2, {rw_x, rw_y}, {lw_x, lw_y}, false)
+	world:createDistanceJoint(base, wheel, {s_x + 20, s_y}, {rw_x, rw_y}, false)
+	world:createDistanceJoint(base, wheel_2, {s_x - 20, s_y}, {lw_x, lw_y}, false)
+
+
+
+	wheel:setSleepingAllowed(false)
+
+	motor:setMotorSpeed(-30)
+
+	motor:setMaxMotorTorque(math.huge)
+	motor:setMotorEnabled(true)
+
+	local mouseJoint
+
+	input.touch:addListener(function(ev)
+	    if ev.type == "down" then
+	        mouseJoint = world:createMouseJoint(ev.x, ev.y, bodyGround)
+	        if mouseJoint then
+	            mouseJoint:setDampingRatio(0.6)
+	            mouseJoint:setFrequency(1)
+	        end
+	    elseif ev.type == "up" then
+	        if mouseJoint then
+	            mouseJoint:remove()
+	        end
+	    else
+	        if mouseJoint then
+	            mouseJoint:setTarget(ev.x, ev.y)
+	        end
+	    end
+	end)
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

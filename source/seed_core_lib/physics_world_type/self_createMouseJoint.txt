@@ -1,0 +1,59 @@
+
+
+self:createMouseJoint() 
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+创建一个鼠标关节physics.MouseJoint对象
+
+
+用法 
+-----
+
+::
+
+    self:createMouseJoint(mousePosX, mousePosY, groundBody)  
+
+| ``mousePosX``. 鼠标X轴坐标 
+| ``mousePosY``. 鼠标Y轴坐标
+| ``groundBody``. BODY体 
+
+返回一个鼠标关节physics.MouseJoint对象 
+
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

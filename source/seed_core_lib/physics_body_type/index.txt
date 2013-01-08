@@ -7,8 +7,31 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-
    
-
-
-
+   self_getPosition
+   self_setPosition
+   self_getLinearVelocity
+   self_setLinearVelocity
+   self_setAngularVelocity
+   self_getAngularVelocity
+   self_getAngle
+   self_setAngle
+   self_setTransform
+   self_getLinearDamping
+   self_setLinearDamping
+   self_getAngularDamping
+   self_setAngularDamping
+   self_getGravityScale
+   self_setGravityScale
+   self_isActive
+   self_setActive
+   self_isAwake
+   self_setAwake
+   self_isBullet
+   self_setBullet
+   self_isSleepingAllowed
+   self_setSleepingAllowed
+   self_isFixedRotation
+   self_setFixedRotation
+   self_bindNode
+   self_createFixture

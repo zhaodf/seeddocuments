@@ -9,6 +9,9 @@ Contents:
    :maxdepth: 2
 
    
+   audio_newSoundPool
+   audio_newPlayer
+
 
 
 

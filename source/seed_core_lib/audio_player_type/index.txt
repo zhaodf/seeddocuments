@@ -9,6 +9,23 @@ Contents:
    :maxdepth: 2
 
    
+   self_type
+   self_native
+   self_prepare
+   self_start
+   self_stop
+   self_pause
+   self_resume
+   self_getState
+   self_setVolume
+   self_seek
+   self_seekInSamples
+   self_tell
+   self_tellInSample
+   self_length
+   self_lengthInSamples
+
+
 
 
 

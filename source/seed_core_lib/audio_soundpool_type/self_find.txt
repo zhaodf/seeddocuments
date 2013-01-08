@@ -1,0 +1,66 @@
+
+
+self:find(res) 
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+查找声音的ID 
+
+
+用法 
+-----
+
+::
+
+	self:find(res) 
+
+| ``res``. 声音文件的URI或资源路径。
+
+
+已加载的声音ID 
+
+
+注意 
+-----
+
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+    local sp = audio.newSoundPool()
+
+    sp:play("res://sounds/s_1.wav")                     --如果事先没有加载，系统会在播放之前自动加载
+
+    local soundId = sp:prepare("res://sounds/s_2.wav")  --加载相应目录下的s_2.wav
+
+    sp:play("res://sounds/s_2.wav")                     --加载之后可以使用URI作为播放函数的参数
+    sp:play(soundId)                                    --也可使用ID作为播放函数的参数，同等条件下，使用ID播放效率更高
+
+    sp:releaseSounds()                                  --不再使用音效，释放资源
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

@@ -9,6 +9,24 @@ Contents:
    :maxdepth: 2
 
    
+   self_bodyA
+   self_bodyB
+   self_next
+   self_jointType
+   self_getAnchorA
+   self_getAnchorB
+   self_setLimitEnabled
+   self_isLimitEnabled
+   self_setLimit
+   self_getLimit
+   self_setMotorEnabled
+   self_isMotorEnabled
+   self_setMotorSpeed
+   self_getMotorSpeed
+   self_setMaxMotorTorque
+   self_getMaxMotorTorque
+   self_getMotorTorque
+
 
 
 

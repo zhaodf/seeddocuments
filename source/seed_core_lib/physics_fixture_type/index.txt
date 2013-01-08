@@ -8,6 +8,16 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   self_body
+   self_getFriction
+   self_setFriction
+   self_getRestitution
+   self_setRestitution
+   self_getDensity
+   self_setDensity
+   self_isSensor
+   self_setSensor
+
    
 
 

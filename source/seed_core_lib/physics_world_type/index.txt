@@ -8,6 +8,23 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   self_setGravity
+   self_render
+   self_start
+   self_stop
+   self_createBody
+   self_regionQuery
+   self_enumRegionQuery
+   self_createDistanceJoint
+   self_createRevoluteJoint
+   self_createMouseJoint
+   self.beginContact
+   self.endContact
+   self.preSolve
+   self.postSolve
+   self.setContactFilter
+
+
    
 
 

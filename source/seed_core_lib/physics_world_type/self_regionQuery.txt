@@ -1,0 +1,60 @@
+
+
+self:regionQuery() 
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+查询一个矩形范围内的所有fixture。
+
+
+用法 
+-----
+
+::
+
+    self:regionQuery(rect)  
+
+| ``true``. 该部件是感应区域，不会让物体受力或弹开，但会触发碰撞事件 
+| ``false``. 该部件不是感应区域，默认值 
+
+
+rect是一个table，包含了矩形的左、上、右、下四条边的位置坐标。
+
+返回矩形范围内以及矩形的边界接触到的所有physics.Fixture对象 
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

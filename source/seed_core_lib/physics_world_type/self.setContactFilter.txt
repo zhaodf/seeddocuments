@@ -1,0 +1,70 @@
+
+
+self.setContactFilter 
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+判断该部件是否为一个感应区域 
+
+
+用法 
+-----
+
+::
+
+    self.setContactFilter
+
+function(fixtureA,fixtureB) end 
+
+==========      ================		========   
+名称            类型 					说明 
+==========      ================		======== 
+fixture			physics.Contact			包含互相接触的Fixture对象，详见physics.Contact
+==========      ================		======== 
+
+
+
+
+
+注意 
+-----
+
+setContactFilter用于决定是否产生碰撞,而非是否出发碰撞事件 
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+   
+	    world:setContactFilter(function(f1, f2)
+	        if f1  and f1.filterType == f2.filterType then
+	            return false
+	        else
+	            return true
+	        end
+	    end)
+
+
+.. toctree::
+   :maxdepth: 2
+   
+
+
+

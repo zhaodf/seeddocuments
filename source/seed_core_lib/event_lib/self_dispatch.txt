@@ -1,0 +1,59 @@
+
+
+self:dispatch()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+获取真实设备的分辨率，单位是像素。
+
+
+用法 
+-----
+
+::
+
+	display.getViewSize()
+
+| ``width``. 真实设备屏幕的水平像素数.
+| ``height``. 真实设备屏幕的垂直像素数.
+
+
+
+注意 
+-----
+
+对于iOS平台来说，代表屏幕像素，如iPhone 4平台此函数会返回960,640。iPhone 3GS平台则为480,320。
+对于Window平台来说，表示游戏窗口的宽和高。
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

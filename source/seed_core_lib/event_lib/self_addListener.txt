@@ -1,0 +1,71 @@
+
+
+self:addListener()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+向Dispatcher注册一个监听器。
+
+
+用法 
+-----
+
+::
+
+	self:addListener(listener[, isWeak])
+
+参数
+^^^^^
+
+==================  	===========
+名称	 					说明
+==================  	===========
+listener	 			注册的监听器。
+isWeak	 				可选参数。是否以弱引用的方式添加监听器。
+==================  	===========
+
+
+
+注意 
+-----
+
+| 如果Dispatcher中已经注册过该监听器，会产生一个警告，该监听器不会被重复添加。
+| isWeak参数用于以弱引用的方式添加监听器：
++ 不提供isWeak参数，或者isWeak为false/nil，那么Dispatcher会维持一个对listener的引用。显式调用self:removeListener(listener)删除监听器可以解除此引用。
++ isWeak提供为true或其它的值，Dispatcher不维持对listener任何引用。一旦listener被回收器回收，事件将被自动注销。
+| 参考说明:内存管理
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+	-- on iPad (横放置状态) ...
+	local size = display.getViewSize()
+	print( size ) -- 1024, 768
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

@@ -3,10 +3,12 @@
 event.*
 ===================================
 
-Contents:
+event包主要包含了事件分发器类型event.Dispatcher，用于注册监听器及向监听器分发事件
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+
+   event_Dispatcher
 
    
 

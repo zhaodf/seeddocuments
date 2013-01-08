@@ -1,0 +1,113 @@
+
+
+self:getDampingRatio()
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+获取阻尼值 
+
+
+用法 
+-----
+
+::
+
+    self:getDampingRatio()
+
+该距离关节的阻尼值 
+
+
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+	
+	（永不停止的双摆）                                
+	local ra = require("runtime"):newAgent();               --创建runtime（相当于计时器）
+
+	local stageCls=display:newBgColorStage();                       --清除画面
+	stageCls.red = 1; stageCls.green = 1; stageCls.blue = 1;    --指定以什么颜色清除画面
+
+	stage = display:newStage2D();                       --创建一个2D渲染阶段，这里用于渲染精灵动画
+	scrW, scrH = display.getContentSize()
+
+	math.randomseed(os.time())                      --产生随机数种子
+
+	local world = physics.newWorld(0,500)           --创建一个物理世界，这里的重力加速度是300pixel/sec^2
+	world:start(ra)                         --物理世界开始逻辑
+	display:addStage(world)                         --加入渲染阶段，显示物理实体
+
+	local bodyGround = world:createBody()
+
+
+	local point = world:createBody("static", {x = scrW/2, y = 0})
+	local fixP = point:createFixture("box", 80, 80, {restitution = 0.1,friction = 0.5,density = 2})  
+
+	local bodyA = world:createBody("dynamic", {x = scrW/2, y = 240})
+	local fixA = bodyA:createFixture("circle", 20, {restitution = 0.1,friction = 0.5,density = 2})    --创建圆形BODY体A
+
+	local bodyB = world:createBody("dynamic", {x = scrW/2, y = 360})
+	local fixB = bodyB:createFixture("circle", 20, {restitution = 0.1,friction = 0.5,density = 2})    --创建圆形BODY体B
+
+	local pointJoint = world:createDistanceJoint(point, bodyA, {scrW/2, 0}, {scrW/2, 240})            --创建距离节点
+	world:createDistanceJoint(bodyA, bodyB, {scrW/2, 240}, {scrW/2, 360})          --创建距离节点
+
+	pointJoint:setLength(200)               --设置关节长度，即两个物体之间的距离
+	print(pointJoint:getLength());          --获取关节长度
+	pointJoint:setFrequency(50)         --设置振动频率
+	--print(pointJoint:getFrequency());         --获取振动频率
+	pointJoint:setDampingRatio(10)          --设置震动阻尼
+	print(pointJoint:getDampingRatio());        --获取阻尼
+
+	local mouseJoint
+
+	--添加鼠标监听事件
+	input.touch:addListener(function(ev)
+	    if ev.type == "down" then
+	        mouseJoint = world:createMouseJoint(ev.x, ev.y, bodyGround)   --创建鼠标关节
+	        if mouseJoint then
+	            mouseJoint:setDampingRatio(12)
+	            mouseJoint:setFrequency(2)
+	        end
+	    elseif ev.type == "up" then
+	        if mouseJoint then
+	            mouseJoint:remove()
+	        end
+	    else
+	        if mouseJoint then
+	            mouseJoint:setTarget(ev.x, ev.y)
+	        end
+	    end
+	end)
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

@@ -1,0 +1,56 @@
+
+
+audio.newSoundPool() 
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+创建audio.SoundPool对象，用来播放音效。 
+
+如果该声音已经被加载过，则直接返回。 
+
+
+
+
+用法 
+-----
+
+::
+
+	audio.newSoundPool() 
+
+audio.SoundPool对象
+
+注意 
+-----
+
+等同于audio.SoundPool.new()
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

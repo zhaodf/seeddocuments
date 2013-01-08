@@ -3,11 +3,17 @@
 store.iap
 ===================================
 
-Contents:
+提供苹果平台的In-App Purchase功能。
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   store_iap_loadProducts
+   store_canMakePayments
+   store_restore
+   store_purchase
+   store_finishTransaction
+   store_transaction
    
 
 

@@ -1,0 +1,68 @@
+
+
+self:createDistanceJoint() 
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+创建一个距离关节physics.DistanceJoint对象 
+
+
+用法 
+-----
+
+::
+
+    self:createDistanceJoint(bodyA, bodyB, anchorA, anchorB) 
+
+| ``bodyA``.  要连接的第一个physics.Body对象 
+| ``bodyB``.  要连接的第二个physics.Body对象 
+
+anchorA ：第一个physics.Body对象的坐标（一个table类型数据，格式如下） 
+
+| ``X``.  X轴坐标值 
+| ``Y``.  Y轴坐标值
+
+anchorB : 第二个physics.Body对象的坐标（一个table类型数据，格式如下）
+
+| ``X``.  X轴坐标值 
+| ``Y``.  Y轴坐标值
+
+返回一个距离关节physics.DistanceJoint对象
+
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

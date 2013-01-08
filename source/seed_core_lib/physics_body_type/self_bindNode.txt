@@ -1,0 +1,57 @@
+
+
+self:bindNode()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+将此物理实体绑定到Stage2D.Node对象上。 
+
+
+用法 
+-----
+
+::
+
+	self:bindNode(node) 
+
+要绑定的Stage2D.Node对象 
+
+
+注意 
+-----
+
+当被绑定的Node有parent时，最终Node的坐标位置、旋转状态等，会受parentNode的影响，因此不建议在这种情况下使用此函数
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

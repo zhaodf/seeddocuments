@@ -1,0 +1,66 @@
+
+
+self:seekInSamples() 
+===================================
+         
+==========      ========  
+类型              函数
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+获取互相接触的两个物体中的其中一个。 
+
+不能给此属性赋值 
+
+ 
+
+
+用法 
+-----
+
+::
+
+    self:seekInSamples(tell) 
+
+| ``tell``.  要跳转到的位置，单位为基本采样单位（音频采样频率分之一秒） 
+
+
+注意 
+-----
+
+可以在音乐加载之后，播放之前调用，比self:seek(tell)更为精确 
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+    local player = audio.newPlayer("res://musics/1.ogg")    --创建播放器，并加载音乐
+    player:start(true)                                      --开始循环播放
+
+    local player_2 = audio.newPlayer()                      --创建播放器
+    player:prepare("res://musics/2.ogg")                    --加载音乐
+    player:seek(20.0)                                       --跳转到第20秒
+    player:start(false)                                     --直接从第20秒的位置播放，只播放一次
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

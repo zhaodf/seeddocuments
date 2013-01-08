@@ -1,0 +1,57 @@
+
+
+self:start() 
+===================================
+         
+==========      ========  
+类型              函数 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+启动物理运行。物理运行的速度受runtime控制。  
+
+
+用法 
+-----
+
+::
+
+    self:start(runtime)  
+
+| ``runtime``. 应为一个runtime.Agent对象。 
+
+
+
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

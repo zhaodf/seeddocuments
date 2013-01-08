@@ -1,0 +1,57 @@
+
+
+self.fixtureB 
+===================================
+         
+==========      ========  
+类型              physics.Fixure 
+所属包             display.*
+返回值         Number
+版本修正        Current Public Release(2012.1224)
+关键字         audio, play, sound, music 
+示范代码            */SeedSDK/SampleCode/*
+相关API           audio.pause() audio.loadSound() audio.loadStream()
+==========      ========  
+
+
+概述
+-----
+
+获取互相接触的两个物体中的其中一个。 
+
+不能给此属性赋值 
+
+ 
+
+
+用法 
+-----
+
+::
+
+    self.fixtureB
+
+
+注意 
+-----
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

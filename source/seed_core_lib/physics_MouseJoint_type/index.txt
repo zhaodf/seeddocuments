@@ -8,6 +8,22 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   self_bodyA
+   self_bodyB
+   self_next
+   self_jointType
+   self_getAnchorA
+   self_getAnchorB
+   self_setTarget
+   self_getTarget
+   self_setMaxForce
+   self_getMaxForce
+   self_setFrequency
+   self_getFrequency
+   self_setDampingRatio
+   self_getDampingRatio
+
+
    
 
 

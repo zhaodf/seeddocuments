@@ -1,0 +1,58 @@
+
+
+audio.newPlayer() 
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+创建播放器audio.Player对象
+
+
+用法 
+-----
+
+::
+
+	audio.newPlayer([res]) 
+
+| ``res``. 背景音乐文件的URI或资源路径
+
+audio.Player对象 
+
+注意 
+-----
+
+等同于audio.Player.new([res]) 
+
+可同时创建不止一个Player，并支持它们同时播放。 
+
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

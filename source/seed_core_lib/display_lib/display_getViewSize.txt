@@ -42,9 +42,7 @@ display.getViewSize()
 范例
 -----
 
-.. highlight:: bash
- 
-.. code-block:: bash
+.. code-block:: lua
 
 	-- on iPad (横放置状态) ...
 	local size = display.getViewSize()

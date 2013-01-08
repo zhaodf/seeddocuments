@@ -41,9 +41,7 @@ render2d.fillRect()
 范例
 -----
 
-.. highlight:: bash
- 
-.. code-block:: bash
+.. code-block:: lua
 
 
 

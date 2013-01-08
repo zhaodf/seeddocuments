@@ -1,0 +1,86 @@
+
+
+self:createFixture()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+为物体添加一个部件。 
+
+
+用法 
+-----
+
+::
+
+	self:createFixture(type, args, ...) 
+
+::
+
+	self:createFixture("box", width, height, args)
+
+::
+
+	self:createFixture("circle", radius, args)
+
+::
+
+	self:createFixture("chain", {px1, py1, px2, py2, ....}, args)
+
+::
+
+	self:createFixture("chainloop", {px1, py1, px2, py2, ....}, args )
+
+physics.Fixture对象 
+
+args是一个table，包含如下内容： 
+
+================	==============		===========
+类型				属性				描述
+================	==============		===========  
+number				x					fixture的位置x（默认为0）
+number				y					fixture的位置y（默认为0） 
+number				angle				fixture的旋转角度（默认为0） 
+number				friction 			摩擦力 
+number				restitution			弹力 
+number				density				密度
+boolean				isSensor			 	是否是一个感应区域。感应区域不会让物体受力或弹开，但会触发碰撞事件。
+================	==============		=========== 
+
+
+注意 
+-----
+
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+
