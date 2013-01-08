@@ -63,9 +63,9 @@ sphinx与seed文档环境配置详细说明(Windows)
 
     开始菜单-运行，输入cmd回车，打开命令行
 
-    输入easy-install Sphinx并等待
+    输入easy-install Sphinx并回车，会进行sphinx-docs的安装。
 
-    如果网络不好，这个过程可能会反复失败，多尝试几次即可。
+    安装可能需要花费几分钟，如果网络不好，这个过程可能会反复失败，多尝试几次即可。
 
     输入sphinx-build判断sphinx是否安装成功
 
