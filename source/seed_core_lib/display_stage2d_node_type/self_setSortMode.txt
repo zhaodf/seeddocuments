@@ -1,0 +1,57 @@
+
+
+self:setSortMode()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+设置该node下面所有直接子节点的绘制顺序
+
+用法 
+-----
+
+::
+
+	self:setSortMode(sortMode) 
+
+| ``nosort``. 不排序.
+| ``ascending``. 按照Z轴的大小升序排列.
+| ``descending``. 按照Z轴的大小降序排列.
+
+
+
+注意 
+-----
+
+若node之间有重叠部分，先绘制node的会被后绘制的node盖在下面 
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

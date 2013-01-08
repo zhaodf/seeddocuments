@@ -1,0 +1,48 @@
+
+
+table.sort() 
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			table.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+对给定的list进行升序排序 
+
+
+用法 
+-----
+
+::
+
+	table.sort(list [, comp]) 
+
+注意 
+-----
+
+comp是一个可选的参数, 此参数是一个外部函数, 可以用来自定义sort函数的排序标准.该函数应满足以下条件: 接受两个参数(依次为a, b), 并返回一个布尔型的值, 当a应该排在b前面时, 返回true, 反之返回false.
+
+
+
+范例
+-----
+
+::
+
+	tbl = {"alpha", "beta", "gamma", "delta"}
+	sortFunc = function(a, b) return b < a end
+	table.sort(tbl, sortFunc)
+	print(table.concat(tbl, ", "))   --gamma, delta, beta, alpha
+
+.. toctree::
+   :maxdepth: 2

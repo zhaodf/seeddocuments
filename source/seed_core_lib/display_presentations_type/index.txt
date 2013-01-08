@@ -1,0 +1,23 @@
+.. _display_presentations_type-index:
+
+display.presentations
+===================================
+
+.. note::
+
+	display.presentations包含了所有的表现类型及其初始化函数。
+	此包内的所有函数均会在display.Stage2D对象及display.Stage2D.Node上产生代理方法，参见Stage2D与Stage2D.Node的代理方法。
+	每个表现类型都可以指定为display.Stage2D.Node的presentation属性，负责展示其结点的外观。
+
+.. toctree::
+   :maxdepth: 2
+
+   display_presentations_newImage
+   display_presentations_newImageRect
+   display_presentations_newSprite
+
+
+   
+
+
+

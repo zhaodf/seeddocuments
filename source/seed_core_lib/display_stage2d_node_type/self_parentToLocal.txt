@@ -1,0 +1,56 @@
+
+
+self:parentToLocal() 
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+把一个坐标从父结点的坐标系转换到Node的结点坐标系
+
+
+用法 
+-----
+
+::
+
+	self:parentToLocal(x, y)
+
+x, y 为父结点坐标系的一个坐标。
+
+返回两个number，为参数在结点坐标系里的坐标x, y 
+
+
+
+注意 
+-----
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

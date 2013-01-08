@@ -1,0 +1,59 @@
+
+
+input.setAccelerateUsed()
+===================================
+         
+==========  	========  
+类型	  			事件 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+设置是否启用加速度传感器。
+
+
+用法 
+-----
+::
+
+	input.setAccelerateUsed(isUsed)
+
+参数
+^^^^^
+
+============  	============
+名称				说明
+============  	============
+isUsed			true为启用，false为关闭
+============  	============
+
+
+
+注意 
+-----
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

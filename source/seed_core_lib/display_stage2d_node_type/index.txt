@@ -1,0 +1,53 @@
+.. _display_stage2d_node_type-index:
+
+display.Stage2D.Node
+===================================
+
+在Stage2D中容纳的结点对象，可以进行旋转、移动、缩放等。
+单独使用时，相当于一个独立的对象。其下还可以容纳多个结点，此时结点相当于一个group。
+
+.. toctree::
+   :maxdepth: 1
+
+   self_firstChild
+   self_lastChild 
+   self_prev
+   self_next
+   self_parent
+   self_presentation
+   self_x 
+   self_y 
+   self_scalex
+   self_scaley
+   self_rotation
+   self_z
+   self_newNode
+   self_remove
+   self_hide
+   self_show
+   self_isVisible
+   self_setAlpha
+   self_getAlpha
+   self_setMaskColor
+   self_worldToLocal
+   self_parentToLocal
+   self_screenToLocal
+   self_localToWorld
+   self_localToParent
+   self_localToScreen
+   self_insertBefore
+   self_insertAfter
+   self_insertFront
+   self_insertBack
+   self_toFront
+   self_toBack
+   self_newImage
+   self_newImageRect
+   self_newSprite
+   self_setSortMode 
+
+
+   
+
+
+

@@ -1,0 +1,58 @@
+
+
+display.getContentSize()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+获取游戏画面的逻辑分辨率，即适配后的“虚拟尺寸”。
+
+
+用法 
+-----
+
+::
+
+	display.getContentSize() 
+
+| ``width``. 真实设备屏幕的水平宽度.
+| ``height``. 真实设备屏幕的垂直高度.
+
+
+
+
+注意 
+-----
+
+在display.setContentMode("fit", 480, 320)这样配置的情况下，无论设备是iPhone3GS还是分别率提高一倍的iPhone 4，使用该函数取得的值都是480,320 
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

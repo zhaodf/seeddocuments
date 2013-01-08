@@ -1,0 +1,58 @@
+
+
+self:insertBefore()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+在当前Stage2D对象的某个节点之前插入另一个已存在的节点
+
+
+用法 
+-----
+
+::
+
+	self:insertBefore(node, target) 
+
+| ``node``. 要插入的Stage2D.Node对象
+| ``target``. 插入到哪个Stage2D.Node对象之前 
+
+
+
+注意 
+-----   
+
+
+列表中的顺序，和实际显示的顺序是相反的。 
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

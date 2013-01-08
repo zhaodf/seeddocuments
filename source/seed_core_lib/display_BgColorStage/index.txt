@@ -1,0 +1,21 @@
+.. _display_BgColorStage-index:
+
+display_BgColorStage.*
+===================================
+
+display包包含了所有与显示有关的功能。
+
+
+.. toctree::
+   :maxdepth: 1
+
+  self_red
+  self_green
+  self_blue
+  self_alpha
+  self_colorbuffer
+
+   
+
+
+

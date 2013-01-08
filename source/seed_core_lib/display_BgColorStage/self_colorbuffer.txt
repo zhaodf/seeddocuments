@@ -1,0 +1,52 @@
+
+
+self.colorbuffer
+===================================
+         
+==========  	========  
+类型	  			bool 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+获取背景颜色的红色分量，取值范围在0.0 ~ 1.0之间。
+
+用法 
+-----
+
+::
+
+	self.colorbuffer
+
+在释放掉该渲染阶段时是否保留当前背景色
+| ``true``. 
+| ``true``. 
+
+
+注意 
+-----
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

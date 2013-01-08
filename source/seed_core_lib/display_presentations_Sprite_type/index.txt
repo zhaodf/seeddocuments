@@ -1,0 +1,26 @@
+.. _display_presentations_Sprite_type-index:
+
+display.presentations.Sprite
+===================================
+
+.. note::
+
+	用于展现一个活动的精灵动画对象。设置为Stage2D.Node的presentation属性后，该Node也会具备Sprite的所有方法。参见结点表现的代理方法.
+
+.. toctree::
+   :maxdepth: 1
+
+   self_render
+   self_pause
+   self_resume
+   self_restartAction
+   self_changeAction
+   self_playAction
+   self_setFlip
+   self_setAnchor
+   self_getAnchor
+
+   
+
+
+

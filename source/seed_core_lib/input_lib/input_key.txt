@@ -1,0 +1,92 @@
+
+
+input.key
+===================================
+         
+==========  	========  
+类型	  			事件 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+当用户按下、松开按键的时候调用此事件。
+你也可以自行调用该事件以实现模拟键盘输入。
+
+
+用法 
+-----
+
+::
+
+	function(ev) end
+	ev是一个table，其内容如下：
+
+==============  	=================================================================================================		========	
+参数名				意义																										附注
+==============  	=================================================================================================		========
+type				事件类型。																								是"down"、"up"之一。										
+time				事件发生的实际时间。																						这个值在许多设备上要比runtime的计时更为精确。
+key					所按下的建。																						
+==============  	=================================================================================================  		========							
+
+::
+
+	Windows平台：
+	对于大部分的字母、数字及符号，key即为对应的内容。其他的键名如下：：
+
+==========  	========  
+key				对应按键
+==========  	========  
+"back"	 		Back或Backspace键
+"tab"			Tab键
+"return"	 	Enter键
+"shift"	 		Shift键
+"control"	 	Ctrl键
+"alt"	 		Alt键
+"pause"	 		Pause键
+"escape"	 	Esc键
+"prior"	 		PageUp键
+"next"	 		PageDown键
+"end"	 		End键
+"home"	 		Home键
+"insert"	 	Insert键
+"delete"	 	Delete键
+"left"	 		左方向键
+"right"	 		右方向键
+"up"	 		上方向键
+"down"	 		下方向键
+"snapshot"	 	Print Screen键
+==========  	========  
+
+
+注意 
+-----
+
+iOS设备不会发送此事件。
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

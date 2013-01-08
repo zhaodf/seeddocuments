@@ -1,0 +1,153 @@
+.. seeddoc documentation master file, created by
+   sphinx-quickstart on Mon Dec 17 23:33:12 2012.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+****************************
+欢迎来到Seed游戏引擎API文档中心
+****************************
+
+.. note::
+
+   *在这里您可以了解关于Seed游戏引擎更多的功能，每个API都配有详细的代码范例和使用注意。*
+
+   
+Lua标准库
+===================================
+.. toctree::
+   :maxdepth: 2
+
+   seed_lua_standard_lib/basic_lib/index
+   seed_lua_standard_lib/debug_lib/index
+   seed_lua_standard_lib/coroutine_lib/index 
+   seed_lua_standard_lib/math_lib/index
+   seed_lua_standard_lib/os_lib/index 
+   seed_lua_standard_lib/io_lib/index  
+   seed_lua_standard_lib/package_lib/index 
+   seed_lua_standard_lib/table_lib/index 
+   
+
+
+引擎核心库
+===================================
+
+.. note::
+
+   *以下都是跟Seed游戏引擎核心相关的API, 当前主要包含事件，显示，输入，物理，声音，数据，商城，系统，网络等。*
+
+事件
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/event_lib/index               
+   seed_core_lib/runtime_lib/index
+   seed_core_lib/transition_lib/index
+
+显示
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/display_lib/index          
+   seed_core_lib/display_stage2d_type/index
+   seed_core_lib/display_stage2d_node_type/index
+   seed_core_lib/display_presentations_type/index  
+   seed_core_lib/display_presentations_Image_type/index  
+   seed_core_lib/display_presentations_ImageRect_type/index  
+   seed_core_lib/display_presentations_Sprite_type/index      
+   seed_core_lib/display_presentations_Sprite_type/index   
+   seed_core_lib/display_ScissorStateEffect/index 
+   seed_core_lib/display_BgColorStage/index      
+   seed_core_lib/render2d_lib/index  
+
+输入
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/input_lib/index               
+   
+
+物理
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/physics_lib/index 
+   seed_core_lib/physics_body_type/index               
+   seed_core_lib/physics_fixture_type/index
+   seed_core_lib/physics_world_type/index
+   seed_core_lib/physics_contact_type/index
+   seed_core_lib/physics_joint_type/index
+   seed_core_lib/physics_DistanceJoint_type/index
+   seed_core_lib/physics_RevoluteJoint_type/index 
+   seed_core_lib/physics_MouseJoint_type/index      
+
+声音
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/audio_lib/index               
+   seed_core_lib/audio_player_type/index
+   seed_core_lib/audio_soundpool_type/index      
+
+数据
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/basic_lib/index               
+   seed_core_lib/debug_lib/index   
+
+游戏商城
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/store_lib/index               
+   seed_core_lib/store_iap_type/index   
+
+
+系统
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/os_lib/index               
+   seed_core_lib/media_lib/index
+   seed_core_lib/nativeui_lib/index    
+
+网络
+---------------------
+.. toctree::
+   :maxdepth: 2
+
+   seed_core_lib/flurry_lib/index               
+   seed_core_lib/gamecenter_lib/index
+   seed_core_lib/ads_lib/index 
+                  
+
+
+引擎插件
+===================================
+
+.. note::
+
+   *以下都是Seed游戏引擎的插件，熟练的使用插件能够帮助您更快的开发游戏节省重复性工作。*
+
+.. toctree::
+   :maxdepth: 2
+
+   seed_lua_standard_lib/basic_lib/index
+   seed_lua_standard_lib/debug_lib/index
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

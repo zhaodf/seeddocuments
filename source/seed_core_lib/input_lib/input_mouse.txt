@@ -1,0 +1,78 @@
+
+
+input.mouse
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+鼠标移动事件的处理。
+
+
+用法 
+-----
+
+::
+
+	input.mouse:addListener(function(ev)	end)--鼠标事件的处理
+	ev - ev是一个table，包含如下内容
+	1:ev.x, ev.y - 当前鼠标的位置
+	2:ev.time - 触发事件时，当前游戏已运行的时间
+	3:ev.type - 鼠标事件的种类：包含如下内容
+
+
+==================  	================  
+参数名					意义
+==================  	================  
+ype	 					鼠标事件的种类。
+move	 				鼠标移动。 【与input.touch事件里的移动不同，这里不管鼠标按键是否被按下，只要经过显示区域，均会触发鼠标事件】
+lButtonDown	 			鼠标左键按下。
+lButtonUp	 			鼠标左键抬起。
+rButtonDown	 			鼠标右键按下。
+rButtonUp	 			鼠标右键抬起。
+==================  	================  
+
+注意 
+-----
+
+依赖input_ex.lua,lua_ex.lua组件
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+	require("lua_ex")
+	input.mouse:addListener(function(ev) 	--添加鼠标移动事件
+    	printTable(ev)                    	--打印出ev数组的值
+	end)
+
+	print(input.isTouchSimulatorUsed())  	--查看当前的模拟器或flash窗口是否在响应input.touch事件
+
+	input.touch:addListener(function(ev)
+    	print("this is input touch event")
+	end)
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

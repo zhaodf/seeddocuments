@@ -1,0 +1,56 @@
+
+
+display:render()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+渲染所有的stage。引擎每次渲染的时候，会调用此函数。如果需要，可以改变此函数以改变渲染时的表现。 
+
+默认的display:render()函数，会将所有的渲染阶段按照添加的顺序执行一遍。 
+
+
+
+
+用法 
+-----
+
+::
+
+	display:render()
+
+
+
+注意 
+-----
+
+必须用:符号调用 
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

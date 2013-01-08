@@ -1,0 +1,40 @@
+
+
+table.unpack() 
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			table.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+返回list中的元素，等价于return list[i], list[i+1], ···, list[j] 
+
+用法 
+-----
+
+::
+
+	ttable.unpack(list [, i [, j]]) 
+
+
+
+范例
+-----
+
+::
+
+	tbl = {"alpha", "beta", "gamma", "delta"}
+	print(table.unpack(tbl))         --alpha beta gamma delta
+
+.. toctree::
+   :maxdepth: 2

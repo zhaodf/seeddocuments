@@ -1,0 +1,66 @@
+
+
+display.newSpriteSet()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+创建精灵动画的动作序列表。
+
+
+用法 
+-----
+
+::
+
+	display.newSpriteSet(data) 
+
+data是一个数组，每一项表示一个动作。目前有以下两种格式： 
+
+{actionname, from_frame, to_frame, actiontime}
+
+该动作从序号为from_frame的帧一直播放到序号为to_frame的帧。 
+
+{actionname, {frame1, frame2, ...}, actiontime}
+
+该动作依次播放序号为frame1、frame2、...的帧。 
+
+
+
+| ``actionname``. 字符串，该动作的名字 
+| ``actiontime``. 该动作每两帧间隔的时间 
+
+
+
+注意 
+-----
+等价于display.SpriteSet.new() 
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

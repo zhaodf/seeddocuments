@@ -1,0 +1,71 @@
+
+
+display.emulateScreen()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+模拟预定义的设备分辨率。
+
+
+用法 
+-----
+
+::
+
+	display.emulateScreen(deviceName[,landscape]) 
+
+| ``deviceName``. 模拟的设备名称 
+| ``landscape(可选)``. landscape参数为true表示对应设备的横屏分辨率。
+
+
+注意 
+-----
+
+deviceName与实际分辨率、ViewScale的对照表 
+
+================	==============		===========
+名称				分辨率				ViewScale
+================	==============		===========  
+iPhone				320x480				1.0
+iPad				640x960				2.0
+iphone_retina		768x1024			1.0
+ipad retina			1536x2048			2.0
+iphone5				1136x640			2.0
+android_240*320		240x320				0.67
+android_320*480		320x480				1.0
+android_480*800		480x800				1.5
+android_480*854		480x800				1.5
+================	==============		=========== 
+
+只可在config.lua里调用
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

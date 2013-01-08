@@ -1,0 +1,55 @@
+
+
+display:newBgColorStage()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+创建一个用于清除屏幕的渲染阶段。
+
+
+用法 
+-----
+
+::
+
+	display:newBgColorStage()
+
+此函数返回一个display.BgColorStage对象 
+
+
+
+注意 
+-----
+
+如果采用:符号调用，那么创建的BgColorStage会被立刻添加到渲染序列。如果采用.符号调用，则不会添加。 
+
+如果不添加清除屏幕的渲染阶段，那么根据平台的不同，屏幕上有可能会残留一些不确定的内容。如果你有一张足以覆盖整个屏幕的贴图，那么就不需要BgColorStage了。
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

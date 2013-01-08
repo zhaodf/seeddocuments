@@ -1,0 +1,77 @@
+
+
+display.ScissorStateEffect
+===================================
+         
+==========  	========  
+类型	  			display.Camera2D 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+用来对图片或者节点进行方形裁剪效果的 
+
+用法 
+-----
+
+::
+
+	display.ScissorStateEffect.new() 
+
+新建裁剪效果对象 
+
+::
+
+	self：setIrect(x,y,w,h) 
+
+设置裁剪区域，参数为（左上角坐标x,y,要裁剪区域的宽跟高） 
+
+| ``x``. 要裁剪区域的中心坐标X.
+| ``y``. 裁剪区域的中心坐标Y.
+| ``w``. 裁剪区域的宽.
+| ``h``. 裁剪区域的高.
+
+该类的使用需要创建裁剪效果对象 
+需要对该对象设置enabled属性为true来激活裁剪特效 
+用setIrect来设置该对象裁剪区域的大小：其参数为（x,y,w,h），x、y：裁剪区域的左上角坐标，w、h：裁剪区域的宽和高 
+通过addEffect函数给要裁剪的节点添加裁剪效果才能实现裁剪效果 
+
+注意 
+-----
+
+子节点会继承父节点的裁剪效果（即该节点内的任何子节点都按照父节点的裁剪区域进行裁剪），有裁剪效果的节点只会显示裁剪框内的部分； 
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+	local eff = display.ScissorStateEffect.new(); -- 新建裁剪效果
+    eff.enabled = true; --设置该裁剪效果为true，即是可用状态
+    eff:setIrect(300,600,60,62)  --设置裁剪区域，参数为[左上角坐标(300,600),要裁剪区域的宽跟高]
+
+    local stage = display:newStage2D();
+    local parentNode = stage:newImage("bg.png");
+    parentNode:setAnchor(-0.5,-0.5)
+    parentNode:addEffect(eff); --为node节点添加裁剪效果
+    local childNode = parentNode:newImage("splashBG.png") –子节点childNode会显示父节点(parentNode)被裁之后的区域范围
+    childNode:setAnchor(-0.5,-0.5)
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

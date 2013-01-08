@@ -1,0 +1,56 @@
+
+
+self:setSrcRect()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+设置锚点
+
+
+用法 
+-----
+
+::
+
+	self:setSrcRect([left, top, ]width, height)
+
+::
+
+	self:setSrcRect({left, top, width, height})	 
+
+| ``left``. 表示图片的左坐标.
+| ``top``. 表示图片的上坐标.
+| ``width``. 表示图片的宽度.
+| ``height``. 表示图片的高度.
+
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

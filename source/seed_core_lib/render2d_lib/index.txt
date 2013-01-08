@@ -1,0 +1,38 @@
+.. _render2d_lib-index:
+
+render2d.*
+===================================
+.. note::
+
+	render2d包中包含了与渲染基本几何体有关的函数，如绘制点、线、矩形、圆等
+
+.. note::
+
+	绘制基本几何体的函数应当作为display.presentations来使用，否则只会在调用处绘制一次，具体用法如下：
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+	local node = stage:newNode()    --创建一个node
+	node:setMaskColor(1,0,0)        --设置node的颜色
+	node.presentation = function()  --将node的presentation设置为自定义的绘制函数
+    	render2d.fillRect(100, 120, 262, 220)
+	end
+
+
+.. toctree::
+   :maxdepth: 1
+
+   render2d_drawPoint
+   render2d_drawLine
+   render2d_drawChain
+   render2d_drawRect
+   render2d_fillRect
+   render2d_drawCircle
+   render2d_fillCircle
+
+   
+
+
+

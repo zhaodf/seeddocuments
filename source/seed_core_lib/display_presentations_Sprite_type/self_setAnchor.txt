@@ -1,0 +1,57 @@
+
+
+self:setAnchor()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+设置锚点
+
+
+用法 
+-----
+
+::
+
+	self:setAnchor(anchorX, anchorY)
+
+| ``anchorX``. 水平锚点.
+| ``anchorY``. 垂直锚点.
+
+
+
+注意 
+-----
+
+Seed引擎中锚点范围是-0.5到+0.5,默认值是以(0, 0)为中心点，cocosBuilder中锚点范围是0到1,默认值是以(0.5, 0.5)为中心点
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

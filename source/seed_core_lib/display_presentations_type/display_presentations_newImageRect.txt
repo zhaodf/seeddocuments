@@ -1,0 +1,63 @@
+
+
+display.presentations.newImageRect()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		ImageRect对象
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+创建一个ImageRect对象，可以显示一张静态图片的特定矩形区域。
+
+
+
+用法 
+-----
+
+::
+
+	display.presentations.newImageRect(image, width, height)
+
+| ``image``. 图片资源的URI或路径.
+| ``width``. 图片的宽度.
+| ``height``. 图片的高度.
+
+::
+
+	display.presentations.newImageRect(image, srcrect)
+
+| ``image``. 图片资源的URI或路径.
+| ``srcrect``. 两个number时表示图片的尺寸，四个number，表示图片的左、上坐标、宽度、高度.
+
+注意 
+-----
+
+等同于display.presentations.ImageRect.new()
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

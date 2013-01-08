@@ -1,0 +1,57 @@
+
+
+input.setTouchSimulatorUsed()
+===================================
+         
+==========  	========  
+类型	  			事件 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+获取真实设备的分辨率，单位是像素。
+
+
+用法 
+-----
+
+::
+
+	input.setTouchSimulatorUsed(value)
+
+参数
+^^^^^
+============  	============
+名称				说明
+============  	============
+value			true为响应，false为不响应
+============  	============
+
+
+注意 
+-----
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

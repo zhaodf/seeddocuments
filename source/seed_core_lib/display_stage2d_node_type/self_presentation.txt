@@ -1,0 +1,50 @@
+
+
+self.presentation
+===================================
+         
+==========  	========  
+类型	  			function或display.presentations下的任意类型
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+决定此结点的表现。
+
+
+用法 
+-----
+
+::
+
+	self.presentation 
+
+
+注意 
+-----
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

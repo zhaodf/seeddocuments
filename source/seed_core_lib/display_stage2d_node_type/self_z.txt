@@ -1,0 +1,52 @@
+
+
+self.z
+===================================
+         
+==========  	========  
+类型	  			number 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+用于结点自动排序的深度值。
+
+
+用法 
+-----
+
+::
+
+	self.z
+
+注意 
+-----
+
+必须使用self:setSortMode()方法之后才会生效
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

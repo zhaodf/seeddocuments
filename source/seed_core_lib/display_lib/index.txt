@@ -1,0 +1,33 @@
+.. _display_lib-index:
+
+display.*
+===================================
+
+display包包含了所有与显示有关的功能。
+
+
+.. toctree::
+   :maxdepth: 1
+
+   display_getViewSize
+   display_getContentSize
+   display_getViewScale
+   display_getContentScale
+   display_setContentMode
+   display_setResourceFilter
+   display_emulateScreen
+   display_addStage
+   display_clearStages
+   display_render
+   display_newBgColorStage
+   display_newStage2D
+   display_newCamera
+   display_newSheet
+   display_newSpriteSet
+
+
+
+   
+
+
+

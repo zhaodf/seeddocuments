@@ -1,0 +1,24 @@
+.. _display_presentations_ImageRect_type-index:
+
+display.presentations.ImageRect
+===================================
+
+.. note::
+	
+	用于展现一个静态图片。设置为Stage2D.Node的presentation属性后，该Node也会具备ImageRect的所有方法。参见结点表现的代理方法.
+
+.. toctree::
+   :maxdepth: 1
+
+   self_render
+   self_setSrcRect
+   self_getSrcRect
+   self_setDestRect
+   self_getDestRect
+   self_setAnchor
+   self_getAnchor
+
+   
+
+
+

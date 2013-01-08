@@ -1,0 +1,23 @@
+.. _display_presentations_Image_type-index:
+
+display.presentations.Image
+===================================
+
+.. note::
+
+	用于展现一个静态图片，区别于ImageRect，只能显示完整的一张图，不能进行裁切。
+	设置为Stage2D.Node的presentation属性后，该Node也会具备Image的所有方法。参见结点表现的代理方法
+
+.. toctree::
+   :maxdepth: 1
+
+   self_width
+   self_height
+   self_render
+   self_setAnchor
+   self_getAnchor
+
+   
+
+
+

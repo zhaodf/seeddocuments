@@ -1,0 +1,87 @@
+
+
+display.newSheet()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+图集可以从一张大图片中选取多个矩形区域，在使用精灵动画时最为常用。
+
+
+用法 
+-----
+
+::
+
+	display.newSheet() 
+
+用法 
+-----
+
+::
+
+	display.newSheet(image, tilew, tileh, columns, rows) 
+
+创建一个所有图块大小都一样的图集，图集序号从1到columns*rows。
+
+返回值：创建的display.Sheet对象
+
+附注：等价于display.Sheet.new()  
+
+| ``image``. 图片资源的URI或路径。 
+| ``tilew``. 每个图块的宽度 
+| ``tileh``. 每个图块的高度  
+| ``columns``. 列数
+| ``rows``. 行数
+
+
+用法 
+-----
+
+::
+
+	display.newSheet(image, data)
+
+创建一个图集，单独指定每个图块的数据，图集序号和data数组的大小一致，图块的原点都是图块的正中心。 
+
+返回值：创建的display.Sheet对象 
+
+附注：等价于display.Sheet.new()
+
+| ``data``. 一个二维数组，每一行表示一个tile块，每一行有8~11个number，分别表示图片中该tile的左、上、右、下四个边界，以及绘制到屏幕上对应的左、上、右、下四个边界坐标。 
+
+
+
+注意 
+-----
+
+
+
+范例
+-----
+
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

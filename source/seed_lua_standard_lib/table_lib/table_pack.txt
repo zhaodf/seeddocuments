@@ -1,0 +1,46 @@
+
+
+table.pack() 
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			table.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+生成并返回一个新的键值为1,2,3...的数组,数组的最后一位存储table的元素个数
+
+
+用法 
+-----
+
+::
+
+	table.pack(...) 
+
+
+
+范例
+-----
+
+::
+
+	tbl = table.pack({"array1", "array2"}, "string1", "string2")
+	for k, v in pairs(tbl) do
+    print(k, v);                --第一次循环  1  table地址
+                                --第二次循环  2  string1
+                                --第三次循环  3  string2
+                                --第四次循环  n  3           PS:table的长度，也就是元素个数
+	end
+
+.. toctree::
+   :maxdepth: 2

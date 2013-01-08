@@ -1,0 +1,43 @@
+
+
+table.insert()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			table.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+在list数组指定位置(pos)插入一个值为value的一个元素. pos参数可选, 默认为数组部分末尾. 
+
+
+用法 
+-----
+
+::
+
+	table.insert(list, [pos,] value)
+
+
+
+范例
+-----
+
+::
+
+	tbl = {"alpha", "beta", "gamma"}
+	table.insert(tbl, "delta")
+	table.insert(tbl, "epsilon")
+	print(table.concat(tbl, ", "))  --alpha,beta,gamma,delta,epsilon
+
+.. toctree::
+   :maxdepth: 2

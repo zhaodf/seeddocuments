@@ -1,0 +1,54 @@
+
+
+render2d.drawLine()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+绘制一条线段.
+
+用法 
+-----
+
+::
+
+	render2d.drawLine(fromX, fromY, toX, toY)
+
+| ``fromX, fromY``. 线段起始点的坐标.
+| ``toX, toY``. 线段终止点的坐标.
+
+
+
+注意 
+-----
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

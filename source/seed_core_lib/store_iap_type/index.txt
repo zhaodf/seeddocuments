@@ -1,0 +1,14 @@
+.. _store_iap_type-index:
+
+store.iap
+===================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

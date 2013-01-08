@@ -1,0 +1,14 @@
+.. _gamecenter-index:
+
+gamecenter.*
+===================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

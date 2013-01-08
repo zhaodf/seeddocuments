@@ -1,0 +1,59 @@
+
+
+self:setMaskColor()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+设置此结点的颜色遮罩参数
+
+
+用法 
+-----
+
+::
+
+	self:setMaskColor(red, green, blue[, alpha])
+
+| ``red``. 红色，返回0到1，没人均为1.
+| ``green``. 绿色，返回0到1，没人均为1.
+| ``blue``. 蓝色，返回0到1，没人均为1.
+| ``alpha``. 不透明度。0为完全透明，1为完全不透明。默认为1
+
+
+
+注意 
+-----
+
+会影响此结点及所有子结点的显示效果。
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

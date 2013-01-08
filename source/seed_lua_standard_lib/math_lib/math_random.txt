@@ -1,0 +1,52 @@
+
+
+math.random()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			math.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+获取随机数
+
+
+用法 
+-----
+
+::
+
+	math.random([m [, n]]) 
+
+| ``x``. (必须)
+| ``Number``. 返回值为一个数字.
+
+注意 
+-----
+在使用math.random函数之前尽量使用math.randomseed(os.time())函数设置随机数种子 
+
+
+范例
+-----
+
+::
+
+	math.random(1, 100) 等价于 math.random(100) 
+	--返回值 1~100的随机整数
+
+.. toctree::
+   :maxdepth: 2
+
+  
+
+
+

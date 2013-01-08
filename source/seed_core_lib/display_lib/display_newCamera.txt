@@ -1,0 +1,53 @@
+
+
+display.newCamera()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+创建一个Camera2D对象
+
+
+用法 
+-----
+
+::
+
+	display.newCamera() 
+
+一个display.Camera2D对象，该对象可用于调整Stage2D或其他二维渲染层的视口位置。 
+
+
+
+注意 
+-----
+
+等价于display.Camera2D.new()。 
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

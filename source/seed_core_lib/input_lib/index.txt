@@ -1,0 +1,27 @@
+.. _input_lib-index:
+
+input.*
+===================================
+
+.. note::
+
+	用来取得用户输入的事件。目前包括键盘输入和触屏/鼠标输入。
+
+.. toctree::
+   :maxdepth: 1
+
+   input_touch
+   input_accelerate
+   input_key
+   input_mouse
+   input_setAccelerateUsed
+   input_isAccelerateUsed
+   input_setTouchSimulatorUsed
+   input_isTouchSimulatorUsed
+
+
+
+   
+
+
+

@@ -1,0 +1,41 @@
+
+
+table.remove() 
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			table.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+删除并返回list数组位于pos位置的元素. 其后的元素会被前移. pos参数可选, 默认为list长度, 即从最后一个元素删起. 
+
+
+用法 
+-----
+
+::
+
+	table.remove(list [, pos]) 
+
+
+
+范例
+-----
+
+::
+
+	tbl = {"alpha", "beta", "gamma", "delta"}
+	print(table.remove(tbl, 2))      --beta
+
+.. toctree::
+   :maxdepth: 2

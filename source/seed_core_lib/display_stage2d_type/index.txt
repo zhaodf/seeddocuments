@@ -1,0 +1,33 @@
+.. _display_stage2d_type-index:
+
+
+display.Stage2D
+===================================
+
+用于二维场景绘制的渲染阶段，相当于一个“图层”。其中可以容纳大量Stage2D_Node对象，可以单独移动、旋转、缩放每个结点。
+Stage2D本身还可以指定camera2D属性，用于控制镜头位置。
+
+
+.. toctree::
+   :maxdepth: 1
+
+   self_camera
+   self_firstChild
+   self_lastChild
+   self_clear
+   self_render
+   self_newNode
+   self_screenToWorld
+   self_insertBefore
+   self_insertAfter
+   self_insertFront
+   self_insertBack
+   self_newImage
+   self_newImageRect
+   self_newSprite
+   self_setSortMode
+
+   
+
+
+

@@ -1,0 +1,59 @@
+
+
+self:playAction()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+播放一次指定的动作。
+
+
+用法 
+-----
+
+::
+
+	self:playAction(action[, onover[, oncancel]])
+
+| ``action``. 要播放的动作名.
+| ``onover``. 动作播放完以后，会执行此回调函数.
+| ``oncancel``. 如果动作播放被另一个playAction/restartAction/changeAction调用打断，或者播放完之前精灵动画就已经被释放，会执行此回调函数.
+
+
+
+注意 
+-----
+
+可以使用该函数的onover回调函数来实现动画播放时画面保持到最后一帧的效果
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+	
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

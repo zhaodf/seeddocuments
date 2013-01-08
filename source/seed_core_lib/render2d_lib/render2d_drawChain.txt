@@ -1,0 +1,57 @@
+
+
+render2d.drawChain()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			render2d.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+绘制一条由多个点组成的折线。
+
+
+用法 
+-----
+
+::
+
+	render2d.drawChain(positions)
+
+| ``positions``. 记录折线上每个点坐标的表，每两个值代表一个坐标，如{x1,y1,x2,y2,x3,y3}.
+
+
+
+
+注意 
+-----
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+	local chain = {100,100,200,200,100,300,0,200,100,100}
+	drawChain(chain)
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

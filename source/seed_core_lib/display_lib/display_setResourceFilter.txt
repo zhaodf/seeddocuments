@@ -1,0 +1,82 @@
+
+
+display.setResourceFilter()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+设置选择最合适资源的方式。这会影响到除了require、loadscript和doscript以外所有载入资源的场合（包括newImageRect、newSheet、loadfile、dofile等）
+
+
+用法 
+-----
+
+::
+
+	display.setResourceFilter([filter]) 
+
+| 返回之前提供的filter。如果之前提供的是一个table，会返回一个经过包装的函数。利用这个包装函数，可以在根据ContentScale选择合适资源的基础上，特殊处理部分资源。
+
+参数提供类型及说明
+
+| ``不提供参数或提供nil``. 不选择资源。在lua脚本中提供的uri会被直接打开 
+| ``提供一个表filterTable``. 根据ContentScale以及表filterTable中所记录的资源后缀名与放大倍数，自动选择合适的资源 
+| ``提供一个函数filterFunction``. 每当有新的资源被载入的时候，该函数会调用，根据该函数的返回值，得到新资源的URI和放大倍数 
+
+
+
+注意 
+-----
+
+        filterTable表中的每个key是一个字符串，表示一个资源的后缀，value表示其对应的最佳scale。隐含了无后缀的对应scale为1。 
+
+            对于每次打开的资源，引擎会按照scale值最接近的 到最不接近的顺序挨个尝试每个后缀。 
+
+            例如提供了{ ["@2"] = 2, ["@3"] = 3, ["-foo"] = 4.5 }的情况下，根据ContentScale： 
+
+                0到1.5，会优先选择无后缀的资源 
+
+                1.5到2.5，会优先选择后缀为@2的资源 
+
+                2.5到3.75，会优先选择后缀为@3的资源 
+
+                3.75以上，会优先选择后缀为-foo的资源 
+
+
+        filterFunction需要有至少一个，至多两个返回值： 
+
+            第一个返回值 如果为字符串，则表示经过处理的uri。返回true表示uri无需处理即可使用。 
+
+            第二个返回值 如果提供，必须为数字，表示该资源的放大倍数。这会影响到ImageRect和Sheet的纹理坐标。 
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

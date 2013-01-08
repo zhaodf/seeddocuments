@@ -1,0 +1,54 @@
+
+
+math.abs()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			math.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+返回数字 ``x`` 的绝对值.
+
+
+用法 
+-----
+
+::
+
+	math.abs( x )
+
+| ``x``. (必须)
+| ``Number``. 返回值为一个数字.
+
+
+范例
+-----
+
+
+ 
+.. highlight:: bash
+ 
+.. code-block:: bash
+ 
+	local a = math.abs(153)        -- Sets a to 153
+	local b = math.abs(-15)        -- Sets b to 15
+	local c = math.abs(12.234)     -- Sets c to 12.234
+	local d = math.abs(-9.23)      -- Sets d to 9.23
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

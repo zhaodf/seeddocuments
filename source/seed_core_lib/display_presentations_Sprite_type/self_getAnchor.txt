@@ -1,0 +1,56 @@
+
+
+self:getAnchor()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+获取精灵动画的锚点.
+
+
+用法 
+-----
+
+::
+
+	self:getAnchor()
+
+| ``anchorX``. 水平锚点.
+| ``anchorY``. 垂直锚点.
+
+
+
+注意 
+-----
+
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

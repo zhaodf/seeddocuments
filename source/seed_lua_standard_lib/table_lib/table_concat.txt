@@ -1,0 +1,42 @@
+
+
+table.concat()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			table.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+列出参数中list的数组部分从start位置到end位置的所有元素, 元素间以指定的分隔符(sep)隔开。除了list外, 其他的参数都不是必须的, 分隔符的默认值是空字符, start的默认值是1, end的默认值是数组部分的总长. 
+
+
+用法 
+-----
+
+::
+
+	table.concat(list [, sep [, start [, end]]]) 
+
+
+
+范例
+-----
+
+::
+
+	tbl = {"alpha", "beta", "gamma"}
+	print(table.concat(tbl, "\n", 2, 3)) --beta
+                                    	 --gamma
+
+.. toctree::
+   :maxdepth: 2

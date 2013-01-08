@@ -1,0 +1,54 @@
+
+
+self:insertFront()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+在当前节点中插入一个已存在的节点，新插入的节点显示在当前节点的所有子节点的最前方
+
+
+用法 
+-----
+
+::
+
+	self:insertFront(node) 
+
+| ``node``. 要插入的stage2D.Node对象
+
+
+
+注意 
+-----
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

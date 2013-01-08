@@ -1,0 +1,54 @@
+
+
+display:newStage2D()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+创建一个用于二维场景的渲染阶段（渲染层） 
+
+
+用法 
+-----
+
+::
+
+	display:newStage2D() 
+
+此函数返回一个display.Stage2D对象 
+
+
+
+注意 
+-----
+
+如果采用:符号调用，那么创建的Stage2D会被立刻添加到渲染序列。如果采用.符号调用，则不会添加。
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

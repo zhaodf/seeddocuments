@@ -1,0 +1,62 @@
+
+
+display:addStage()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+增加一个渲染阶段（渲染层）
+
+
+用法 
+-----
+
+::
+
+	display:addStage(stage) 
+
+| ``stage``. 
+
+
+
+注意 
+-----
+
+所有的渲染阶段会按照添加的顺序进行渲染。 
+
+关于渲染阶段和渲染层，参见说明:渲染阶段 
+
+必须用:符号调用 
+
+
+
+
+范例
+-----
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

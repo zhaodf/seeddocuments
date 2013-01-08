@@ -1,0 +1,52 @@
+
+
+math.randomseed()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			math.*   
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			
+==========  	========  
+
+
+概述
+-----
+
+设置随机数种子 
+
+
+用法 
+-----
+
+::
+
+	math.randomseed(os.time())
+
+| ``x``. (必须)
+| ``Number``. 返回值为一个数字.
+
+注意 
+-----
+在使用math.random函数之前必须使用此函数设置随机数种子 
+
+
+范例
+-----
+
+::
+
+	math.randomseed(os.time()) 
+	--设置随机数种子
+
+.. toctree::
+   :maxdepth: 2
+
+  
+
+
+

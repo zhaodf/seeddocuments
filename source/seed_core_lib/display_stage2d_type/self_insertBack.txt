@@ -1,0 +1,54 @@
+
+
+self:insertBack()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+在当前Stage2D对象中插入一个已存在的节点，新插入的对象显示在最后方。 
+
+
+用法 
+-----
+
+::
+
+	self:insertBack(node) 
+
+| ``node``. 要插入的Stage2D.Node对象
+
+
+注意 
+-----
+
+这里的Back是指显示在最后方，不是列表的最后方。 
+
+
+范例
+-----
+
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+

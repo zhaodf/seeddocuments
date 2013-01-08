@@ -1,0 +1,56 @@
+
+
+render2d.fillRect()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+绘制一个填充颜色的矩形.
+
+
+用法 
+-----
+
+::
+
+	render2d.fillRect(left, top, right, bottom)
+
+| ``left``. 矩形的左边界坐标.
+| ``top``. 矩形的上边界坐标.
+| ``right``. 矩形的右边界坐标.
+| ``bottom``. 矩形的下边界坐标.
+
+
+
+注意 
+-----
+
+
+范例
+-----
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+
+.. toctree::
+   :maxdepth: 1
+
+   
+
+
+

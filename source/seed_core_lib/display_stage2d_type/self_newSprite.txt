@@ -1,0 +1,60 @@
+
+
+self:newSprite()
+===================================
+         
+==========  	========  
+类型	  			函数 
+所属包  			display.*
+返回值   		Number
+版本修正   		Current Public Release(2012.1224)
+关键字			audio, play, sound, music 
+示范代码			*/SeedSDK/SampleCode/*
+相关API			audio.pause() audio.loadSound() audio.loadStream()
+==========  	========  
+
+
+概述
+-----
+
+指定一个图集和一个动作序列表，创建一个结点，活动的精灵动画对象 
+
+用法 
+-----
+
+::
+
+	self:newSprite(runtime, sheet, set[, action]) 
+
+| ``runtime``. 一个runtime.Agent对象，此精灵动画的运行速度将依赖此Agent
+| ``sheet``. 一个display.Sheet对象，精灵动画的动作图集 
+| ``set``. 一个display.SpriteSet对象，精灵动画的动作序列表 
+| ``action``. 初始动作。默认为一个不存在的动作（即不显示） .
+
+一个Stage2D.Node对象，它同时具备Sprite的所有方法 
+
+
+
+注意 
+-----
+
+这是一个代理方法，来自于display.presentations.newSprite。参见创建结点的代理方法
+
+
+范例
+-----
+
+
+
+.. highlight:: bash
+ 
+.. code-block:: bash
+
+
+.. toctree::
+   :maxdepth: 2
+
+   
+
+
+
